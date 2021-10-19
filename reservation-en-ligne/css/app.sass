@@ -1,0 +1,97 @@
+*
+    box-sizing: border-box
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
+$bg-dark: #191A32
+$blue: #33E6F6
+$white: #fff
+
+body
+    background: $bg-dark
+    font-family: roboto
+
+h1
+    font-size: 35px
+    font-weight: bold
+    text-align: center
+    color: $white
+    margin-top: 25px
+
+.container
+    max-width: 850px
+    padding: 10px
+    width: 100%
+    margin: auto
+    form
+        .input-group
+            width: 100%
+            border: 1px solid gray
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: relative
+            color: white
+            border-radius: 15px
+            .label
+                background: $bg-dark
+                position: absolute
+                line-height: 15px
+                font-size: 15px
+                top: -7px
+                padding: 0 10px
+                left: 25px
+            input
+                border: 0
+                padding: 20px 5px
+                background: transparent
+                outline: none
+                color: white
+                &:focus
+                    color: $blue
+        .form-input
+            position: relative
+            input, select, textarea
+                margin: 15px 0
+                width: 100%
+                background: transparent
+                padding: 20px 5px
+                border: 1px solid gray
+                border-radius: 15px
+                outline: none
+                appearance: none
+                color: white
+                &:focus
+                    border: 1px solid $blue
+                    background: $bg-dark
+            label
+                position: absolute
+                background: $bg-dark
+                color: white
+                top: 7px
+                left: 25px
+                padding: 0 10px
+            select:focus
+                background: $bg-dark
+        .form-submit
+            cursor: pointer
+            input
+                background: $blue
+                padding: 17px
+                text-align: center
+                display: block
+                width: 100%
+                border: none
+                outline: none
+                border-radius: 15px
+                color: black
+                font-weight: bold
+                font-size: 14px
+        .switch .label
+            background: $bg-dark
+            line-height: 15px
+            font-size: 15px
+            top: -7px
+            color: white
+            padding: 0 10px
+            left: 25px

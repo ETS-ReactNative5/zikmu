@@ -1,0 +1,289 @@
+@font-face 
+    font-family: "Lato"
+    src: url('./../src/font/Lato-Regular.ttf'),
+    url('./../src/font/Lato-Bold.ttf')
+    
+*
+    box-sizing: border-box
+    font-family: "Lato"!important
+
+$blue: #2394DB
+
+@media screen and (min-width: 481px)
+    .video_replace
+        display: none
+
+
+header.header
+    height: 122px
+    width: calc(100vw -20px)
+    background-color: $blue
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h1
+        a
+            img
+                height: 102px
+                width: auto
+    .right  
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        .destinations
+            width: 339px
+            height: 58px
+            padding: 5px 10px
+            position: relative
+            background-color: white
+            margin-right: 25px
+            span
+                line-height: calc(58px - 8px)
+                font-size: 24px
+                color: $blue
+                width: 275px!important
+            .dest__toggler
+                position: absolute
+                right: 5px
+                top: 50%
+                transform: translateY(-50%) rotate(180deg)
+                background: none
+                border: none
+                outline: none
+                &.active
+                    transform: translateY(-50%)
+                svg
+                    fill: $blue
+                    stroke: $blue
+            .dest__menu
+                position: absolute
+                top: 100%
+                left: 0
+                opacity: 0
+                background-color: white
+                z-index: 999
+                font-size: 24px
+                color: $blue
+                width: 100%
+                height: 0
+                transition: height .3s!important
+                li
+                    margin: 5px auto
+                    opacity: 0
+                &.active
+                    padding: 10px
+                    opacity: 1
+                    height: auto
+                    li
+                        opacity: 1
+        .search
+            .sea__input
+                height: 58px
+                width: 332px
+                padding: 0 10px
+                border: none
+                outline: none
+                background: white
+                font-size: 24px
+                &::placeholder
+                    font-size: 24px
+                    line-height: 24px
+                    color: lightgrey
+            .sea__submit
+                height: 58px
+                width: 58px
+                font-size: 24px
+                background: white
+                border: none
+                outline: none
+                color: $blue
+.hero-banner
+    position: relative
+    div.absolute
+        color: #E74C3C
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        h3
+            font-size: 99px
+        p
+            font-size: 36px
+    video
+        width: 100%
+.content
+    max-width: 953px
+    margin: 50px auto
+    h3
+        font-size: 36px
+        text-align: center
+        color: $blue
+        margin-bottom: 75px
+    .card-container 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .card
+            min-width: 217px
+            background-color: #E2E2E2
+            padding: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            border: 1px solid $blue
+            img
+                max-height: 100px
+
+.footer
+    height: 58px
+    background-color: $blue
+    width: 100%
+    div
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        column-gap: 10px
+        color: white
+        a
+            color: white
+            text-decoration: none
+            transition: .3s
+            &:hover
+                text-decoration: underline
+
+@media screen and (max-width: 480px)
+    
+    header.header
+        height: auto
+        background-color: $blue
+        padding: 10px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-direction: column
+        h1
+            a
+                img
+                    height: 102px
+                    width: auto
+        .right  
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+            .destinations
+                width: 100%
+                height: 58px
+                padding: 5px 10px
+                position: relative
+                background-color: white
+                margin-right: 0
+                margin-top: 15px
+                span
+                    line-height: calc(58px - 8px)
+                    font-size: 24px
+                    color: $blue
+                    width: 275px!important
+                .dest__toggler
+                    position: absolute
+                    right: 5px
+                    top: 50%
+                    transform: translateY(-50%) rotate(180deg)
+                    background: none
+                    border: none
+                    outline: none
+                    &.active
+                        transform: translateY(-50%)
+                    svg
+                        fill: $blue
+                        stroke: $blue
+                .dest__menu
+                    position: absolute
+                    top: 100%
+                    left: 0
+                    opacity: 0
+                    background-color: white
+                    z-index: 999
+                    font-size: 24px
+                    color: $blue
+                    width: 100%
+                    height: 0
+                    transition: height .3s!important
+                    li
+                        margin: 5px auto
+                        opacity: 0
+                        display: none
+                    &.active
+                        padding: 10px
+                        opacity: 1
+                        height: auto
+                        li
+                            opacity: 1
+                            display: block
+            .search
+                .sea__input
+                    margin-top: 15px
+                    height: 58px
+                    width: 332px
+                    padding: 0 10px
+                    border: none
+                    outline: none
+                    background: white
+                    font-size: 24px
+                    &::placeholder
+                        font-size: 24px
+                        line-height: 24px
+                        color: lightgrey
+                .sea__submit
+                    height: 58px
+                    width: 58px
+                    font-size: 24px
+                    background: white
+                    border: none
+                    outline: none
+                    color: $blue
+    .hero-banner
+        position: relative
+        div.absolute
+            color: #E74C3C
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            text-align: center
+            h3
+                font-size: 36px
+            p
+                font-size: 18px
+        video
+            display: none
+        .video_replace
+            display: auto
+            width: 100%
+    .content
+        h3
+            font-size: 36px
+        .card-container 
+            flex-direction: column
+            .card
+                margin: 10px auto
+    .footer
+        height: 58px
+        background-color: $blue
+        width: 100%
+        div
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            column-gap: 10px
+            color: white
+            a
+                color: white
+                text-decoration: none
+                transition: .3s
+                &:hover
+                    text-decoration: underline

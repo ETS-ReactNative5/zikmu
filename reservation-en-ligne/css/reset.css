@@ -1,0 +1,97 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*::selection{
+	color: inherit;
+}
+
+
+  .switch input[type="checkbox"] {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+  }
+  .switch label {
+	width: 100%;
+	height: 36px;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.5s;
+	background: #151529;
+  }
+  .switch label::after {
+	content: "Oui";
+	width: 50%;
+	height: 32px;
+	background-color: #191A32;
+	position: absolute;
+	border-radius: 70px;
+	top: 2px;
+	left: 2px;
+	transition: 0.5s;
+	text-align: center;
+	line-height: 32px;
+	color: #33E6F6;
+  }
+  
+  .switch input:checked + label:after {
+	content: "Non";
+	left: calc(100% - 3px);
+	transform: translateX(-100%);
+  }
+  
+  .switch input:checked + label {
+	background-color: #151529;
+  }
+  
+  .switch label:active:after {
+	width: 50%;
+  }
+  

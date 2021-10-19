@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #191A32;
+  font-family: roboto;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.container {
+  max-width: 850px;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.container form .input-group {
+  width: 100%;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: white;
+  border-radius: 15px;
+}
+
+.container form .input-group .label {
+  background: #191A32;
+  position: absolute;
+  line-height: 15px;
+  font-size: 15px;
+  top: -7px;
+  padding: 0 10px;
+  left: 25px;
+}
+
+.container form .input-group input {
+  border: 0;
+  padding: 20px 5px;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+.container form .input-group input:focus {
+  color: #33E6F6;
+}
+
+.container form .form-input {
+  position: relative;
+}
+
+.container form .form-input input, .container form .form-input select, .container form .form-input textarea {
+  margin: 15px 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 5px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: white;
+}
+
+.container form .form-input input:focus, .container form .form-input select:focus, .container form .form-input textarea:focus {
+  border: 1px solid #33E6F6;
+  background: #191A32;
+}
+
+.container form .form-input label {
+  position: absolute;
+  background: #191A32;
+  color: white;
+  top: 7px;
+  left: 25px;
+  padding: 0 10px;
+}
+
+.container form .form-input select:focus {
+  background: #191A32;
+}
+
+.container form .form-submit {
+  cursor: pointer;
+}
+
+.container form .form-submit input {
+  background: #33E6F6;
+  padding: 17px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.container form .switch .label {
+  background: #191A32;
+  line-height: 15px;
+  font-size: 15px;
+  top: -7px;
+  color: white;
+  padding: 0 10px;
+  left: 25px;
+}
+/*# sourceMappingURL=app.css.map */

@@ -30,7 +30,7 @@ class InstalledVersions
     'aliases' => 
     array (
     ),
-    'reference' => '4bf8d2a2e5434360f0e193d836e24af707d1656a',
+    'reference' => 'feea3af9e9c0a7196dd67d82450f8062b2433a7a',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -550,7 +550,7 @@ class InstalledVersions
       'aliases' => 
       array (
       ),
-      'reference' => '4bf8d2a2e5434360f0e193d836e24af707d1656a',
+      'reference' => 'feea3af9e9c0a7196dd67d82450f8062b2433a7a',
     ),
     'laravel/sail' => 
     array (
@@ -953,8 +953,8 @@ class InstalledVersions
     array (
       'provided' => 
       array (
-        0 => '1.0|2.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0|2.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1161,6 +1161,33 @@ class InstalledVersions
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'spatie/db-dumper' => 
+    array (
+      'pretty_version' => '2.21.1',
+      'version' => '2.21.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '05e5955fb882008a8947c5a45146d86cfafa10d1',
+    ),
+    'spatie/laravel-backup' => 
+    array (
+      'pretty_version' => '6.16.5',
+      'version' => '6.16.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '332fae80b12cacb9e4161824ba195d984b28c8fb',
+    ),
+    'spatie/temporary-directory' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f517729b3793bca58f847c5fd383ec16f03ffec6',
     ),
     'stripe/stripe-php' => 
     array (
